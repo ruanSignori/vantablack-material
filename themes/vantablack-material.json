@@ -700,6 +700,77 @@
             "settings": {
                 "foreground": "#D4D4D4"
             }
+        },
+        {
+            "name": "Markdown: Headings",
+            "scope": [
+                "heading.1.markdown",
+                "heading.2.markdown",
+                "heading.3.markdown",
+                "heading.4.markdown",
+                "heading.5.markdown",
+                "heading.6.markdown",
+                "markup.heading"
+            ],
+            "settings": {
+                "foreground": "#569cd6",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown: Links",
+            "scope": [
+                "markup.underline.link",
+                "markup.underline.link.markdown",
+                "meta.link.reference"
+            ],
+            "settings": {
+                "foreground": "#4EC9B0"
+            }
+        },
+        {
+            "name": "Markdown: Inline Code",
+            "scope": [
+                "markup.raw",
+                "markup.raw.inline",
+                "markup.raw.markdown"
+            ],
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
+            "name": "Markdown: Bold",
+            "scope": [
+                "markup.bold",
+                "markup.bold.markdown"
+            ],
+            "settings": {
+                "foreground": "#DCDCAA",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown: Italic",
+            "scope": [
+                "markup.italic",
+                "markup.italic.markdown"
+            ],
+            "settings": {
+                "foreground": "#DCDCAA",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown: Lists and Numbers",
+            "scope": [
+                "markup.list",
+                "markup.list.markdown",
+                "punctuation.definition.list.begin.markdown"
+            ],
+            "settings": {
+                "foreground": "#b6b6b6"
+            }
         }
     ]
 }
