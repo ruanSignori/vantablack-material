@@ -4,16 +4,15 @@ A VSCode theme that combines the ultra-dark background from Vantablack (inspired
 
 ## Preview
 
-
+![Preview](./images/preview.png)
 
 ## Installation
 
-1. Clone this repository
-2. Copy to VS Code extensions folder:
-   - Windows: `%USERPROFILE%\.vscode\extensions`
-   - Mac/Linux: `~/.vscode/extensions`
-3. Restart VS Code
-4. Select "Vantablack Material Dark" from File > Preferences > Color Theme
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```
+ext install ruanSignori.vantablack-material
+``` 
 
 
 ## License
