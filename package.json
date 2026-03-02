@@ -1,13 +1,14 @@
 {
     "name": "vantablack-material",
     "displayName": "Vantablack Material Dark",
+    "icon": "images/icon.png",
     "description": "VSCode theme - Vantablack background with Material Dark syntax colors",
     "publisher": "ruanSignori",
     "repository": {
         "type": "git",
         "url": "https://github.com/ruanSignori/vantablack-material.git"
     },
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.70.0"
     },
