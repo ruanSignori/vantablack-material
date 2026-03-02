@@ -26,8 +26,8 @@
         "button.background": "#80cbc4",
         "button.foreground": "#000000",
         "button.hoverBackground": "#4db6ac",
-        "checkbox.background": "#80cbc450",
-        "checkbox.foreground": "#eeffff",
+        "checkbox.background": "#80cbc4",
+        "checkbox.foreground": "#000000",
 
         "dropdown.background": "#111111",
         "dropdown.listBackground": "#111111",
@@ -353,29 +353,15 @@
         "testing.message.info.lineBackground": "#8d8d8d15",
 
         "welcomePage.background": "#0d0d0d",
-        // "welcomePage.buttonBackground": "#80cbc4",
-        // "welcomePage.buttonHoverBackground": "#4db6ac",
-        // "welcomePage.buttonForeground": "#000000",
 
-        // "extensionButton.prominentBackground": "#80cbc4",
-        // "extensionButton.prominentForeground": "#000000",
-        // "extensionButton.prominentHoverBackground": "#4db6ac",
+        "extensionButton.prominentBackground": "#80cbc4",
+        "extensionButton.prominentForeground": "#000000",
+        "extensionButton.prominentHoverBackground": "#4db6ac",
         "welcomePage.progress.background": "#1a1a1a",
         "welcomePage.progress.foreground": "#8d8d8d",
         "welcomePage.tileBackground": "#111111",
         "welcomePage.tileHoverBackground": "#1a1a1a",
         "walkThrough.embeddedEditorBackground": "#111111",
-
-        // "gitDecoration.addedResourceForeground": "#b6b6b6",
-        // "gitDecoration.modifiedResourceForeground": "#9b9b9b",
-        // "gitDecoration.deletedResourceForeground": "#a4a4a4",
-        // "gitDecoration.renamedResourceForeground": "#b0b0b0",
-        // "gitDecoration.stageModifiedResourceForeground": "#9b9b9b",
-        // "gitDecoration.stageDeletedResourceForeground": "#a4a4a4",
-        // "gitDecoration.untrackedResourceForeground": "#8d8d8d",
-        // "gitDecoration.ignoredResourceForeground": "#444444",
-        // "gitDecoration.conflictingResourceForeground": "#cecece",
-        // "gitDecoration.submoduleResourceForeground": "#ececec",
 
         "settings.headerForeground": "#ffffff",
         "settings.modifiedItemIndicator": "#8d8d8d",
@@ -484,6 +470,110 @@
     },
     "tokenColors": [
         {
+            "name": "HTML Tag Punctuation",
+            "scope": [
+                "punctuation.definition.tag",
+                "punctuation.definition.tag.begin",
+                "punctuation.definition.tag.end"
+            ],
+            "settings": {
+                "foreground": "#888888"
+            }
+        },
+        {
+            "name": "JSON Keys",
+            "scope": [
+                "string.key.json",
+                "entity.name.type.json"
+            ],
+            "settings": {
+                "foreground": "#9CDCFE"
+            }
+        },
+        {
+            "name": "HTML Tags",
+            "scope": [
+                "entity.name.tag",
+                "meta.tag"
+            ],
+            "settings": {
+                "foreground": "#569cd6"
+            }
+        },
+        {
+            "name": "HTML Attributes",
+            "scope": [
+                "entity.other.attribute-name",
+                "entity.other.attribute-name.html",
+                "entity.other.attribute-name.xhtml",
+                "entity.other.attribute-name.pug",
+                "entity.other.attribute-name.handlebars",
+                "entity.other.attribute-name.vue"
+            ],
+            "settings": {
+                "foreground": "#9cdcfe"
+            }
+        },
+        {
+            "name": "CSS Classes and Selectors",
+            "scope": [
+                "entity.name.class.css",
+                "entity.name.class.scss",
+                "entity.name.tag.css",
+                "entity.name.tag.scss",
+                "entity.name.class.less",
+                "entity.selector.css",
+                "entity.selector.scss",
+                "entity.selector.less",
+                "support.type.selector.css",
+                "support.type.selector.scss",
+                "support.type.selector.less",
+                "selector.css",
+                "selector.scss",
+                "selector.less"
+            ],
+            "settings": {
+                "foreground": "#d7ba7d"
+            }
+        },
+        {
+            "name": "CSS property value",
+            "scope": [
+                "support.constant.property-value",
+                "support.constant.font-name",
+                "support.constant.media-type",
+                "support.constant.media",
+                "constant.other.color.rgb-value",
+                "constant.other.rgb-value",
+                "support.constant.color"
+            ],
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
+            "name": "YAML Keys",
+            "scope": [
+                "entity.name.tag.yaml",
+                "keyword.key.yaml"
+            ],
+            "settings": {
+                "foreground": "#569cd6"
+            }
+        },
+        {
+            "name": "YAML Values",
+            "scope": [
+                "string.yaml",
+                "string.unquoted.yaml",
+                "constant.numeric.yaml",
+                "constant.bool.yaml"
+            ],
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
             "name": "Keywords and Imports",
             "scope": [
                 "keyword",
@@ -528,7 +618,6 @@
                 "support.class",
                 "support.type",
                 "entity.name.type",
-                "entity.name.class",
                 "entity.other.inherited-class",
                 "storage.type.numeric.go",
                 "storage.type.byte.go",
@@ -568,6 +657,18 @@
             }
         },
         {
+            "name": "New keyword",
+            "scope": [
+                "keyword.control.new",
+                "keyword.other.new",
+                "keyword.new",
+                "storage.type.js"
+            ],
+            "settings": {
+                "foreground": "#569cd6"
+            }
+        },
+        {
             "name": "Variable and parameter name",
             "scope": [
                 "variable",
@@ -590,21 +691,6 @@
             "settings": {
                 "foreground": "#6A9955",
                 "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "CSS property value",
-            "scope": [
-                "support.constant.property-value",
-                "support.constant.font-name",
-                "support.constant.media-type",
-                "support.constant.media",
-                "constant.other.color.rgb-value",
-                "constant.other.rgb-value",
-                "support.constant.color"
-            ],
-            "settings": {
-                "foreground": "#CE9178"
             }
         },
         {
